@@ -73,7 +73,7 @@ export default function Home() {
         <nav className="max-w-7xl mx-auto p-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <UserCircle2 className="w-8 h-8 text-blue-600" />
-            <span className="text-2xl font-extrabold text-gray-950">FixThess</span>
+            <span className="text-2xl font-extrabold text-gray-950">FixIt.gr</span>
           </div>
           <button className="text-sm font-medium text-gray-600 hover:text-blue-600">
             Γίνε Συνεργάτης
