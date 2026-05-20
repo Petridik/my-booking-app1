@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FixIt.gr – Location-Based Services Platform (MVP)
 
-## Getting Started
+FixIt is a modern web platform designed to bridge the gap between local customers and technical professionals (plumbers, electricians, etc.). By leveraging location data, the application allows users to discover, evaluate, and contact service providers in their area.
 
-First, run the development server:
+## 🏛️ Architecture & Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project is built using a modern, unified full-stack approach:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **Frontend & Routing:** [Next.js](https://nextjs.org/) (React) utilizing the App Router for optimized performance and server-side rendering (SSR).
+*   **Styling:** Tailwind CSS for a fully responsive, mobile-first User Interface.
+*   **Backend & Database:** [Supabase](https://supabase.com/) (PostgreSQL) handling:
+    *   Relational data storage (Users, Profiles, Services, Reviews).
+    *   Row-Level Security (RLS) policies for secure data access.
+*   **Authentication:** Supabase Auth (GoTrue) implementing secure session management for clients and providers.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌟 Key Functionalities
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. User & Professional Roles
+*   **Client Dashboard:** Browse services, filter by proximity/ratings, and manage service requests.
+*   **Professional Dashboard:** Create and update business profiles, list services, manage availability, and showcase portfolio work.
 
-## Learn More
+### 2. Location-Based Discovery
+*   Integration of geographic queries to match users with nearby service providers efficiently.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Data Integrity & Security
+*   Secure authentication flows.
+*   Protected database endpoints using Supabase middleware and Next.js Server Actions.
